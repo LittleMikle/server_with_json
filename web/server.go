@@ -15,6 +15,6 @@ func RunWeb(address string) {
 
 func rootHandler(w http.ResponseWriter, r *http.Request) {
 
-	fmt.Fprintf(w, "Welcome,Your is:%s\n", r.RemoteAddr)
+	fmt.Fprintf(w, "Welcome,Your IP and port is:%s\n", r.RemoteAddr)
 
 }
